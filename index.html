@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- CSS Stylesheet-->
+    <link rel="stylesheet" href="./assets/index.css"/>
+    
+    <title>Jared Templeton Portfolio</title>
+</head>
+<body>
+    <!-- Animated Background-->
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+    
+    <!-- Navbar -->
+    <header class="navbar">
+        <h1 class="title">Jared Templeton</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero (About me)-->
+    <section class="hero" id="about">
+        <img
+        src="./assets/images/portfolio-pic.jpg"
+        alt="Picture of Jared Templeton"
+        class="hero-img"
+        />
+        <div class="bio">
+            <h2 class="bio-title">About Me</h2>
+            <p class="bio-text">Hello. I'm Jared Templeton. Currently employed by the renown resturant "Chili's".
+                Looking for career change I found web development. After enlisting in the Universty
+                of Central Florida's Full Stack boot camp I knew this was the line of work I wanted to execute.
+                Now hoping for a chance to step into the development world and make some extraordinary responsive web apps.
+                While no where near an expert, I strive to learn and educate myself more everyday and hope to get started with a company soon. 
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="skills" id="skills">
+        <h2 class="skills-title">Top Skills</h2>
+        <div class="skills-container">
+            <div class="skill-set">
+                <img
+                    src="./assets/icons/icons8-html-64.png"
+                    alt="HTML5 Icon"
+                    class="icon"
+                    />
+                <img
+                    src="./assets/icons/icons8-css-64 (1).png"
+                    alt="CSS Icon"
+                    class="icon"
+                    />
+                <img
+                    src="./assets/icons/icons8-javascript-64 (1).png"
+                    alt="JavaScript Icon"
+                    class="icon"
+                    />
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects" id="projects">
+        <h2 class="projects-title">My Projects</h2>
+        <div class="projects-container">
+            <div class="project-container project-card">
+                <a href="https://jaredtempleton.github.io/PasswordGenerator/" target="_blank">
+                <img
+                    src="./assets/images/project-1.png"
+                    alt="Password Generator"
+                    class="project-pic"
+                    />
+                </a>
+                <h3 class="project-title">Password Generator</h3>
+                <p class="project-snippet">A simple password generator for anyone to use</p>
+                <a href="https://jaredtempleton.github.io/PasswordGenerator/" target="_blank" class="project-link">See it first hand</a>
+            </div>
+            <div class="project-container project-card">
+                <a href="https://macro-matics.herokuapp.com/" target="_blank">
+                <img
+                  src="./assets/images/project-2.png"
+                  alt="Macromatics"
+                  class="project-pic"
+                />
+                </a>
+                <h3 class="project-title">Macro-Matics</h3>
+                <p class="project-snippet">This application allows the user to track their fitness goals</p>
+                <a href="https://macro-matics.herokuapp.com/" target="_blank" class="project-link">See it first hand</a>
+            </div>
+            <div class="project-container project-card">
+                <a href="" target="_blank">
+                <img
+                    src="./assets/images/project-3.jpg"
+                    alt="Still working on it"
+                    class="project-pic"
+                />
+                </a>
+                <h3 class="project-title">Coming Soon</h3>
+                <p class="project-snippet">I'm still working on this one</p>
+                <a href="" target="_blank" class="project-link">See it first hand</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact me -->
+    <section class="contact" id="contact">
+        <h2>Get In Touch With Me</h2>
+        <div class="contact-form-container">
+          <div class="contact-form">
+            <form action="https://formspree.io/f/xyylngw" method="POST">
+              <div class="form-control">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="sender-name"
+                  placeholder="Enter Your Name"
+                  class="input-field"
+                  required
+                />
+              </div>
+              <div class="form-control">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="sender-email"
+                  placeholder="Enter Your Email"
+                  class="input-field"
+                  required
+                />
+              </div>
+              <div class="form-control">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  cols="60"
+                  rows="10"
+                  placeholder="Enter Your Message"
+                  name="message"
+                  class="input-field"
+                  required
+                ></textarea>
+              </div>
+              <input
+                type="submit"
+                value="Submit"
+                id="submit-btn"
+                class="submit-btn"
+              />
+            </form>
+          </div>
+        </div>
+      </section>
+    
+</body>
+</html>
